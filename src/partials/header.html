@@ -1,3 +1,35 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <nav class="nav">
+      <a class="logo" href="#">
+        <svg class="logo__icon">
+          <use href="./images/icon-sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="nav_list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">My library</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="form">
+      <div class="wrapper__input">
+        <input
+          class="form__input"
+          type="text"
+          name="search"
+          autocomplete="off"
+        />
+        <svg class="form__icon">
+          <use href="./images/icon-sprite.svg#icon-search"></use>
+        </svg>
+        <label class="form__label" for="search">Movie search</label>
+      </div>
+    </form>
+  </div>
 </header>

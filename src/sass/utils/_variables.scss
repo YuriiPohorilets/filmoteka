@@ -1,0 +1,14 @@
+$colors: (
+  'primary': #000000,
+  'secondary': #545454,
+  'accent': #ff6b01,
+  'subtitle': #8c8c8c,
+
+  'active-white': #ffffff,
+  'bg': #f7f7f7,
+  'err': #ff001b,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
