@@ -5,12 +5,14 @@
         <svg class="logo__icon">
           <use href="./images/icon-sprite.svg#icon-logo"></use>
         </svg>
+        <span class="logo__text">Filmoteka</span>
       </a>
 
       <ul class="nav_list">
         <li class="nav__item">
           <a class="nav__link nav__link--active" href="#">Home</a>
         </li>
+
         <li class="nav__item">
           <a class="nav__link" href="#">My library</a>
         </li>
@@ -24,12 +26,21 @@
           type="text"
           name="search"
           autocomplete="off"
+          placeholder=" "
         />
-        <svg class="form__icon">
-          <use href="./images/icon-sprite.svg#icon-search"></use>
-        </svg>
-        <label class="form__label" for="search">Movie search</label>
+
+        <button class="form__btn" type="submit">
+          <svg class="form__icon">
+            <use href="./images/icon-sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+
+        <label class="form__label" for="search">Movie search...</label>
       </div>
     </form>
+
+    <span class="notification hidden">
+      Search result not successful. Enter the correct movie name
+    </span>
   </div>
 </header>
