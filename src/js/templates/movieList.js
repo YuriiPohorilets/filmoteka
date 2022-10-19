@@ -25,9 +25,9 @@ function moviesListTemplate({ poster_path, title, release_date }) {
         <li class="movie__item">
           <a hres="#" class="movie__link">
             <img class="movie__img"
-            loading="lazy"
-            src="${imgBaseUrl}${poster_path}" 
-
+             width="500"
+             loading="lazy"
+             src="${imgBaseUrl}${poster_path}" 
             />
             
             <div class="movie__descr">

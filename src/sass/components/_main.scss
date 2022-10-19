@@ -2,21 +2,50 @@
   @extend %list;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+
+  @include m {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  @include l {
+    gap: 32px 16px;
+  }
 }
 
 .movie__item {
   max-width: 280px;
+  min-width: 280px;
   height: 443px;
 
-  // overflow: hidden;
   background-color: transparent;
+
+  @include m {
+    max-width: 336px;
+    min-width: 336px;
+
+    height: 495px;
+  }
+
+  @include l {
+    max-width: 394px;
+    min-width: 394px;
+
+    height: 634px;
+  }
 }
 
 .movie__link {
   @extend %link;
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
 }
 
 .movie__img {
@@ -28,9 +57,30 @@
   border-radius: 5px;
 
   object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(0.5);
+
+  transition: filter 250ms ease-in-out;
+
+  @include m {
+    height: 455px;
+  }
+
+  @include l {
+    height: 574px;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+  }
 }
 
 .movie__title {
   font-weight: 500;
   text-transform: uppercase;
+
+  @include l {
+    font-size: 20px;
+  }
 }
