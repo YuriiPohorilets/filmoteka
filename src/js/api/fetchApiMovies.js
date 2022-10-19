@@ -35,6 +35,22 @@ export default class FetchApiMovies {
     }
   }
 
+  async fetchKey(query) {
+    const url = `${BASE_URL}${URL_KEY}?${searchParams}&query=${query}`;
+
+    try {
+      const response = await axios.get(url);
+
+      this.setQuery(query);
+      this.resetPage();
+      this.setLoadedHits(response.total_pages);
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   incrementPage(nextPage) {
     this.page = nextPage;
   }

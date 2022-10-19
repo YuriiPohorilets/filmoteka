@@ -12,3 +12,5 @@ async function renderMovieList(data) {
 }
 
 renderMovieList(data);
+
+fetchApiMovies.fetchKey('car');
