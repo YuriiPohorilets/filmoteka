@@ -114,7 +114,8 @@
   border: none;
   border-bottom: 1px solid getColor(active-white);
 
-  &:not(:placeholder-shown) ~ .form__label {
+  &:not(:placeholder-shown) ~ .form__label,
+  &:focus-within ~ .form__label {
     transform: translateY(-200%);
   }
 }
