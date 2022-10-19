@@ -1,6 +1,8 @@
 body {
+  position: relative;
   font-size: 12px;
   color: getColor(primary);
+  min-height: 100%;
 }
 
 h1,
