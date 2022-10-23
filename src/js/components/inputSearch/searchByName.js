@@ -1,6 +1,6 @@
-import refs from '../../refs/refs';
-import FetchApiMovies from '../../api/fetchApiMovies';
-import renderMovieListMarkup from '../../templates/movieList';
+import { refs } from '../../refs/refs';
+import { FetchApiMovies } from '../../api/fetchApiMovies';
+import { renderMovieListMarkup } from '../../templates/movieList';
 
 const fetchApiMovies = new FetchApiMovies();
 

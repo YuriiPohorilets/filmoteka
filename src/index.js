@@ -1,5 +1,5 @@
-import FetchApiMovies from './js/api/fetchApiMovies';
-import renderMovieListMarkup from './js/templates/movieList';
+import { FetchApiMovies } from './js/api/fetchApiMovies';
+import { renderMovieListMarkup } from './js/templates/movieList';
 import { onSubmitForm } from './js/components/inputSearch/searchByName';
 
 const fetchApiMovies = new FetchApiMovies();

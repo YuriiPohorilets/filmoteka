@@ -1,7 +1,7 @@
 import axios from 'axios';
+
 const API_KEY = '20e13b9a04a0b41c58cfa9dd598a635c';
 const BASE_URL = 'https://api.themoviedb.org/3/';
-
 const URL_TRENDING = 'trending/movie/day';
 const URL_KEY = 'search/movie';
 
@@ -12,7 +12,7 @@ const searchParams = new URLSearchParams({
   include_adult: false,
 });
 
-export default class FetchApiMovies {
+export class FetchApiMovies {
   constructor() {
     this.searchQuery = '';
     this.page = 1;

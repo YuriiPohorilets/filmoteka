@@ -1,10 +1,10 @@
-import refs from '../refs/refs';
+import { refs } from '../refs/refs';
 import noPosterImage from '../../images/no-poster.jpeg';
 
 let imgBaseUrl = 'https://image.tmdb.org/t/p/w500/';
 const noPosterImg = noPosterImage;
 
-export default function renderMovieListMarkup(movies) {
+export function renderMovieListMarkup(movies) {
   refs.moviesList.innerHTML = '';
   const moviesList = movies
     .map(movie => {
