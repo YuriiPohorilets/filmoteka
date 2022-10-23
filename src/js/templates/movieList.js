@@ -5,6 +5,7 @@ let imgBaseUrl = 'https://image.tmdb.org/t/p/w500/';
 const noPosterImg = noPosterImage;
 
 export default function renderMovieListMarkup(movies) {
+  refs.moviesList.innerHTML = '';
   const moviesList = movies
     .map(movie => {
       if (movie.poster_path === null) {

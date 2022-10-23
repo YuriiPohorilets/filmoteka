@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <nav class="nav">
-      <a class="logo" href="#">
+      <a class="logo" href="./">
         <svg class="logo__icon">
           <use href="./images/icon-sprite.svg#icon-logo"></use>
         </svg>
@@ -21,7 +21,14 @@
 
     <form class="form">
       <div class="wrapper__input">
-        <input class="form__input" type="text" name="search" autocomplete="off" placeholder=" " />
+        <input
+          class="form__input"
+          type="text"
+          name="search"
+          autocomplete="off"
+          placeholder=" "
+          required
+        />
 
         <button class="form__btn" type="submit">
           <svg class="form__icon">
@@ -33,7 +40,7 @@
       </div>
     </form>
 
-    <span class="notification hidden">
+    <span class="notification off">
       Search result not successful. Enter the correct movie name
     </span>
   </div>

@@ -145,6 +145,7 @@
 }
 
 .form__label {
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: 5px;
@@ -157,6 +158,20 @@
 }
 
 .notification {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
   font-size: 14px;
   color: getColor(err);
+
+  opacity: 1;
+  visibility: visible;
+
+  transition: all 300ms;
+
+  &.off {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

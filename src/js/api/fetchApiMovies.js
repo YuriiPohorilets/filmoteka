@@ -28,7 +28,7 @@ export default class FetchApiMovies {
       this.setQuery('');
       this.resetPage();
       this.setLoadedHits(response.total_pages);
-      console.log(response.data);
+
       return response.data;
     } catch (error) {
       console.log(error);
@@ -44,7 +44,7 @@ export default class FetchApiMovies {
       this.setQuery(query);
       this.resetPage();
       this.setLoadedHits(response.total_pages);
-      console.log(response.data);
+
       return response.data;
     } catch (error) {
       console.log(error);
