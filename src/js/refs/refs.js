@@ -3,4 +3,6 @@ export const refs = {
   form: document.querySelector('.form'),
   formInput: document.querySelector('.form__input'),
   notification: document.querySelector('.notification'),
+  loader: document.querySelector('.loader'),
+  overlay: document.querySelector('.overlay'),
 };
