@@ -28,6 +28,7 @@ function moviesListTemplate({ poster_path, title, release_date }) {
             <img class="movie__img"
              width="500"
              loading="lazy"
+             alt="${title}"
              src="${imgBaseUrl}${poster_path}" 
             />
             
