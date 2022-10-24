@@ -5,4 +5,6 @@ export const refs = {
   notification: document.querySelector('.notification'),
   loader: document.querySelector('.loader'),
   overlay: document.querySelector('.overlay'),
+  modal: document.querySelector('.modal'),
+  filmOverlay: document.querySelector('.film__overlay'),
 };

@@ -1,6 +1,7 @@
 import { FetchApiMovies } from './js/api/fetchApiMovies';
 import { renderMovieListMarkup } from './js/templates/movieList';
 import { onSubmitForm } from './js/components/inputSearch/searchByName';
+import { onFilmClick } from './js/components/modal/modal';
 import { Loader } from './js/components/loader/loader';
 
 const loader = new Loader();

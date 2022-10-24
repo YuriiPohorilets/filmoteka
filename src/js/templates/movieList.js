@@ -21,9 +21,9 @@ export function renderMovieListMarkup(movies) {
   refs.moviesList.insertAdjacentHTML('beforeend', moviesList);
 }
 
-function moviesListTemplate({ poster_path, title, release_date }) {
+function moviesListTemplate({ poster_path, title, release_date, id }) {
   return `
-        <li class="movie__item">
+        <li class="movie__item" id="${id}">
           <a hres="#" class="movie__link">
             <img class="movie__img"
              width="500"
