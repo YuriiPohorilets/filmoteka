@@ -120,6 +120,8 @@
   border: 1px solid getColor(primary);
   border-radius: 5px;
 
+  cursor: pointer;
+
   &--active {
     color: getColor(active-white);
     background-color: getColor(accent);

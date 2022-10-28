@@ -53,7 +53,7 @@ export class FetchApiMovies {
   }
 
   async fullFetch(id) {
-    const url = `${BASE_URL}${URL_ID}${id}?${searchParams}`;
+    const url = `${BASE_URL}${URL_ID}/${id}?${searchParams}`;
 
     try {
       const response = await axios.get(url);
