@@ -13,24 +13,23 @@
   background-color: #fff;
   border-radius: 5px;
 
-  overflow: auto;
+  overflow-y: auto;
 
   @include m {
     padding: 40px;
-    max-width: 704px;
+    min-width: 704px;
     max-height: 552px;
   }
 
   @include l {
     padding: 40px 12px;
-
-    max-width: 806px;
+    min-width: 806px;
     max-height: 552px;
   }
 }
 
 .film__overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -40,4 +39,5 @@
   background-color: rgba(0, 0, 0, 0.4);
 
   z-index: 998;
+  overflow: hidden;
 }

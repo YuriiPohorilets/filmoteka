@@ -1,3 +1,7 @@
+.movie {
+  flex-grow: 1;
+}
+
 .movie__list {
   @extend %list;
 

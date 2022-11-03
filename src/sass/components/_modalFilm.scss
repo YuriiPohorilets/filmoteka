@@ -1,7 +1,4 @@
 .film {
-  width: 100%;
-  height: 100%;
-
   @include m {
     display: flex;
     justify-content: center;
@@ -17,10 +14,10 @@
   margin-bottom: 20px;
 
   border-radius: 5px;
-
   overflow: hidden;
 
   @include m {
+    margin-bottom: 0;
     max-width: 264px;
     max-height: 374px;
   }

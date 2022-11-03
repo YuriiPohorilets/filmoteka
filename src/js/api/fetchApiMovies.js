@@ -32,7 +32,7 @@ export class FetchApiMovies {
       console.log(response.data);
       return response.data;
     } catch (error) {
-      console.log(error);
+      return console.log(error);
     }
   }
 
@@ -48,7 +48,7 @@ export class FetchApiMovies {
 
       return response.data;
     } catch (error) {
-      console.log(error);
+      return console.log(error);
     }
   }
 
@@ -60,7 +60,7 @@ export class FetchApiMovies {
 
       return response.data;
     } catch (error) {
-      console.log(error);
+      return console.log(error);
     }
   }
 

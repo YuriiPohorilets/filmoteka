@@ -7,6 +7,8 @@ const loader = new Loader();
 const { fullFetch } = new FetchApiMovies();
 
 refs.moviesList.addEventListener('click', onFilmClick);
+refs.filmOverlay.addEventListener('click', closeModal);
+window.addEventListener('keydown', closeModal);
 
 export async function onFilmClick(e) {
   e.preventDefault();
@@ -19,19 +21,18 @@ export async function onFilmClick(e) {
   }
 
   const selectedMovie = e.target.closest('li');
-  console.log(selectedMovie.id);
-
   const data = await fullFetch(selectedMovie.id);
 
   openModal();
   renderMovieCard(data);
-  console.log(data);
   loader.off();
 }
 
-function closeModal() {
-  refs.modal.classList.add('off');
-  refs.filmOverlay.classList.add('off');
+function closeModal(e) {
+  if (e.code === 'Escape' || e.target === e.currentTarget) {
+    refs.modal.classList.add('off');
+    refs.filmOverlay.classList.add('off');
+  }
 }
 
 function openModal() {
